@@ -1,0 +1,65 @@
+@import 'normalize.css/normalize.css';
+@import 'basscss/css/basscss.min.css';
+@import './fontello/css/fontello.css';
+@import './fontello/css/animation.css';
+@import './variables.css';
+
+* {
+  color: #333;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  /*position: relative;*/
+  /*padding: 0 1rem 3rem 1rem;*/
+}
+
+.color1 { color: var(--color1) }
+.color1-l { color: var(--color1-l) }
+.color1-d { color: var(--color1-d) }
+
+.white { color: #fff }
+.silver { color: #aaa }
+.red { color: #FF4136 }
+
+.bg-white { background-color: #fff }
+.bg-transparent { background-color: #fff0 }
+
+.border-silver { border-color: #aaa }
+.border-color1 { border-color: var(--color1) }
+
+.pointer { cursor: pointer }
+.outline-none { outline: none }
+.appearance-none { appearance: none }
+
+input::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: normal;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0
+}
+
+input::-moz-placeholder {
+  color: #aaa;
+  font-weight: normal;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0
+}
+
+
+.btn {
+  transition: all 0.3s ease;
+  &:hover, &:disabled {
+    opacity: 0.75;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
