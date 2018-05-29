@@ -6,16 +6,17 @@ https://fcc-stockMarket-aunz.glitch.me/
 
 Client
 - React, for components
-- React router, for routing
-- Apollo React, for fetching data using GraphQL
+- HighStock for charting
 
 Server
 - Express
-- Apollo express
+- Server Send Event to sync between clients
+
+API
+- Quandl for stock data
 
 Database
-- Sqlite3
-- Better-sqlite
+- None
 
 Build tool
 - Webpack
