@@ -1,0 +1,14 @@
+run production and deploy to Glitch https://fcc-stockmarket-aunz.glitch.me/
+
+1) run production build
+node mwb --mode production
+This will create the ./dist dir
+zip the dir
+upload to Glitch using the assets function on Glitch, then copy the url
+then in Glitch console, run
+curl -o dist.zip the_url
+unzip dist.zip # replace All
+rm dist.zip # remove when all done, also remove the assets
+
+3) .env
+copy necessery keys
